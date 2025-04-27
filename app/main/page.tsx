@@ -31,18 +31,18 @@ export default function Main() {
   }
 
   return (
-    <div className="flex flex-col align-center justify-center">
+    <div className="flex flex-col align-center justify-center overflow-x-hidden">
       <div className="flex flex-col items-center max-h-screen">
-        <Label className="text-4xl font-akira p-5">Greetings!</Label>
-        <Avatar className="w-24 h-24">
+        <Label className="text-4xl font-akira p-5 max-sm:text-[20px]">Greetings!</Label>
+        <Avatar className="w-24 h-24 max-sm:w-16 max-sm:h-16">
           <AvatarImage src="https://avatars.githubusercontent.com/u/97579224?v=4" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="font-bold text-xl">My name is M-Jey L. Saturno</div>
-        <div className="font-medium">
+        <div className="font-bold text-xl max-sm:text-[18px]">My name is M-Jey L. Saturno</div>
+        <div className="font-medium max-sm:text-[12px]">
           Software, Mobile Developer & Graphic Designer
         </div>
-        <div className="flex align-center justify-center mt-5 justify-evenly w-3/12">
+        <div className="flex align-center justify-center mt-5 justify-evenly w-3/12 max-sm:w-8/12">
           <Button
             variant="outline"
             onClick={() => openUrl("https://github.com/JayHaroo")}
