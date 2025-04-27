@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export default function Main() {
   const openUrl = (url: string) => {
@@ -19,6 +20,15 @@ export default function Main() {
       window.open(url, "_blank");
     }
   };
+
+  function VideoPlayer({ uri }: { uri: string }) {
+    return (
+      <video controls width={"100%"} height={300}>
+        <source src={uri} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    );
+  }
 
   return (
     <div className="flex flex-col align-center justify-center">
@@ -28,11 +38,27 @@ export default function Main() {
           <AvatarImage src="https://avatars.githubusercontent.com/u/97579224?v=4" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="">My name is M-Jey L. Saturno</div>
-        <div className="">Software, Mobile Developer & Graphic Designer</div>
+        <div className="font-bold text-xl">My name is M-Jey L. Saturno</div>
+        <div className="font-medium">
+          Software, Mobile Developer & Graphic Designer
+        </div>
         <div className="flex align-center justify-center mt-5 justify-evenly w-3/12">
-          <Button variant="outline" onClick={() => openUrl('https://github.com/JayHaroo')}>My Github</Button>
-          <Button variant="outline" onClick={() => openUrl('https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link')}>My Resume</Button>
+          <Button
+            variant="outline"
+            onClick={() => openUrl("https://github.com/JayHaroo")}
+          >
+            My Github
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() =>
+              openUrl(
+                "https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link"
+              )
+            }
+          >
+            My Resume
+          </Button>
         </div>
       </div>
 
@@ -42,7 +68,7 @@ export default function Main() {
 
       <div className="flex flex-col items-center max-h-screen">
         <Label className="text-2xl font-akira p-5">Experience</Label>
-        <div className="flex justify-around w-11/12">
+        <div className="grid grid-cols-3 gap-3">
           <Card className="w-96">
             <CardHeader>
               <CardTitle>Freelance Graphic Designer</CardTitle>
@@ -99,12 +125,17 @@ export default function Main() {
       </div>
       <div className="flex flex-col items-center max-w-screen">
         <Label className="text-2xl font-akira p-5">Selected Works</Label>
-        <div className="flex grid gap-3 justify-center w-full">
+        <div className="flex grid gap-3 justify-center">
           <Card className="w-96">
             <CardHeader className="font-special">
               Icadio: An image Captioning application
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage src="https://saturno-mjey.vercel.app/assets/icadio-D_oPlUfF.jpg" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">Android Studio</Badge>
@@ -119,7 +150,12 @@ export default function Main() {
             <CardHeader className="font-special">
               Selyo Mobile: Tokenizing Social Interactions
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage src="https://saturno-mjey.vercel.app/assets/selyo-B1BAy3r4.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
@@ -146,7 +182,9 @@ export default function Main() {
             <CardHeader className="font-special">
               NXT.GM: A place for everyone to share and join games
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <VideoPlayer uri="https://nxtgm.s3.ap-southeast-2.amazonaws.com/uploads/untitled.webm" />
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
@@ -161,7 +199,12 @@ export default function Main() {
             <CardHeader className="font-special">
               PassForge: A Strong Password Generator
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage src="https://saturno-mjey.vercel.app/assets/passforge-nSObfqM-.jpg" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">Android Studio</Badge>
@@ -172,7 +215,12 @@ export default function Main() {
 
           <Card className="w-96">
             <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Avatar className="w-full h-full rounded-none">
+                <AvatarImage src="https://saturno-mjey.vercel.app/assets/chapp-BS9CDXP5.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">Next.JS</Badge>
