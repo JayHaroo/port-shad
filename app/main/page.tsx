@@ -1,3 +1,4 @@
+"use client";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 
 export default function Main() {
+  const openUrl = (url: string) => {
+    if (typeof window !== "undefined") {
+      window.open(url, "_blank");
+    }
+  };
+
   return (
     <div className="flex flex-col align-center justify-center">
       <div className="flex flex-col items-center max-h-screen">
@@ -24,8 +31,8 @@ export default function Main() {
         <div className="">My name is M-Jey L. Saturno</div>
         <div className="">Software, Mobile Developer & Graphic Designer</div>
         <div className="flex align-center justify-center mt-5 justify-evenly w-3/12">
-          <Button variant="outline">My Github</Button>
-          <Button variant="outline">My Resume</Button>
+          <Button variant="outline" onClick={() => openUrl('https://github.com/JayHaroo')}>My Github</Button>
+          <Button variant="outline" onClick={() => openUrl('https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link')}>My Resume</Button>
         </div>
       </div>
 
@@ -159,6 +166,16 @@ export default function Main() {
               <div className="">
                 <Badge variant="outline">Android Studio</Badge>
                 <Badge variant="outline">Java</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-96">
+            <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">Next.JS</Badge>
               </div>
             </CardFooter>
           </Card>
