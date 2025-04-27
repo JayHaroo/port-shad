@@ -157,7 +157,7 @@ export default function Main() {
       </div>
       <div className="flex flex-col items-center max-w-screen mb-5 max-sm:mt-[100px]">
         <Label className="text-2xl font-akira p-5">Selected Works</Label>
-        <div className="flex grid gap-3 justify-center">
+        <div className="flex grid grid-cols-2 gap-3 justify-center max-sm:grid-cols-none">
           <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               Icadio: An image Captioning application
