@@ -268,9 +268,9 @@ export default function Main() {
         <Separator />
       </div>
 
-      <div className="flex flex-col items-center max-w-screen mb-5">
+      <div className="flex flex-col items-center max-w-screen mb-10">
         <Label className="text-2xl font-akira p-5">My Stack</Label>
-        <div className="flex grid grid-cols-4 gap-3 justify-center">
+        <div className="flex grid grid-cols-8 gap-3 justify-center max-sm:grid-cols-4">
           <SiJavascript size={60} title="JavaScript" color="white" />
           <SiTypescript size={60} title="TypeScript" color="white" />
           <FaNodeJs size={60} title="NodeJS" color="white" />
