@@ -152,13 +152,17 @@ export default function Main() {
           </Card>
         </div>
       </div>
+
       <div className="p-5">
         <Separator />
       </div>
+
       <div className="flex flex-col items-center max-w-screen mb-5 max-sm:mt-[100px]">
         <Label className="text-2xl font-akira p-5">Selected Works</Label>
-        <div className="flex grid grid-cols-2 gap-3 justify-center max-sm:grid-cols-none">
-          <Card className="w-96 max-sm:w-80">
+
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 p-5">
+          {/* Each card */}
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
               Icadio: An image Captioning application
             </CardHeader>
@@ -168,22 +172,20 @@ export default function Main() {
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </CardContent>
-            <CardFooter className="flex justify-between">
-              <div className="">
-                <Badge variant="outline">Android Studio</Badge>
-                <Badge variant="outline">Kotlin</Badge>
-                <Badge variant="outline">TensorFlow</Badge>
-                <Badge variant="outline">Flask</Badge>
-              </div>
+            <CardFooter className="flex flex-wrap gap-1">
+              <Badge variant="outline">Android Studio</Badge>
+              <Badge variant="outline">Kotlin</Badge>
+              <Badge variant="outline">TensorFlow</Badge>
+              <Badge variant="outline">Flask</Badge>
             </CardFooter>
           </Card>
 
-          <Card className="w-96 max-sm:w-80">
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
               Selyo Mobile: Tokenizing Social Interactions
             </CardHeader>
             <CardContent>
-              <Avatar className="w-full h-full rounded-none">
+              <Avatar className="rounded-none aspect-[16/9] w-full h-full">
                 <AvatarImage src="https://saturno-mjey.vercel.app/assets/selyo-B1BAy3r4.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
@@ -196,7 +198,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 max-sm:w-80">
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
               Doku. – Smart Contracts, No BLockchain needed.
             </CardHeader>
@@ -210,7 +212,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 max-sm:w-80">
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
               NXT.GM: A place for everyone to share and join games
             </CardHeader>
@@ -227,7 +229,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 max-sm:w-80">
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
               PassForge: A Strong Password Generator
             </CardHeader>
@@ -245,7 +247,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 max-sm:w-80">
+          <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
             <CardContent>
               <Avatar className="w-full h-full rounded-none">
@@ -261,36 +263,38 @@ export default function Main() {
           </Card>
         </div>
       </div>
+
       <div className="p-5">
         <Separator />
       </div>
+
       <div className="flex flex-col items-center max-w-screen mb-5">
         <Label className="text-2xl font-akira p-5">My Stack</Label>
         <div className="flex grid grid-cols-4 gap-3 justify-center">
-          <SiJavascript size={60} title="JavaScript" color="white"/>
-          <SiTypescript size={60} title="TypeScript" color="white"/>
-          <FaNodeJs size={60} title="NodeJS" color="white"/>
-          <SiReact size={60} title="React.JS" color="white"/>
-          <SiVite size={60} title="Vite" color="white"/>
-          <RiNextjsFill size={60} title="Next.JS" color="white"/>
-          <SiPython size={60} title="Python" color="white"/>
-          <FaJava size={60} title="Java" color="white"/>
-          <FaHtml5 size={60} title="HTML5" color="white"/>
-          <SiCss3 size={60} title="CSS3" color="white"/>
-          <SiTailwindcss size={60} title="Tailwind CSS" color="white"/>
-          <SiExpo size={60} title="Expo" color="white"/>
-          <SiAndroidstudio size={60} title="Android Studio" color="white"/>
-          <SiFlask size={60} title="Flask" color="white"/>
-          <SiExpress size={60} title="Express" color="white"/>
-          <DiMysql size={60} title="MySQL" color="white"/>
-          <DiMongodb size={60} title="MongoDB" color="white"/>
-          <SiSolidity size={60} title="Solidity" color="white"/>
-          <FaHardHat size={60} title="Hardhat" color="white"/>
-          <FaEthereum size={60} title="Ethereum" color="white"/>
-          <SiHoppscotch size={60} title="Hoppscotch" color="white"/>
-          <SiOpenai size={60} title="OpenAI" color="white"/>
-          <SiFigma size={60} title="Figma" color="white"/>
-          <FaAws size={60} title="AWS" color="white"/>
+          <SiJavascript size={60} title="JavaScript" color="white" />
+          <SiTypescript size={60} title="TypeScript" color="white" />
+          <FaNodeJs size={60} title="NodeJS" color="white" />
+          <SiReact size={60} title="React.JS" color="white" />
+          <SiVite size={60} title="Vite" color="white" />
+          <RiNextjsFill size={60} title="Next.JS" color="white" />
+          <SiPython size={60} title="Python" color="white" />
+          <FaJava size={60} title="Java" color="white" />
+          <FaHtml5 size={60} title="HTML5" color="white" />
+          <SiCss3 size={60} title="CSS3" color="white" />
+          <SiTailwindcss size={60} title="Tailwind CSS" color="white" />
+          <SiExpo size={60} title="Expo" color="white" />
+          <SiAndroidstudio size={60} title="Android Studio" color="white" />
+          <SiFlask size={60} title="Flask" color="white" />
+          <SiExpress size={60} title="Express" color="white" />
+          <DiMysql size={60} title="MySQL" color="white" />
+          <DiMongodb size={60} title="MongoDB" color="white" />
+          <SiSolidity size={60} title="Solidity" color="white" />
+          <FaHardHat size={60} title="Hardhat" color="white" />
+          <FaEthereum size={60} title="Ethereum" color="white" />
+          <SiHoppscotch size={60} title="Hoppscotch" color="white" />
+          <SiOpenai size={60} title="OpenAI" color="white" />
+          <SiFigma size={60} title="Figma" color="white" />
+          <FaAws size={60} title="AWS" color="white" />
         </div>
       </div>
     </div>
