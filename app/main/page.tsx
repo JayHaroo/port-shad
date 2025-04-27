@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 
 export default function Main() {
   return (
@@ -33,7 +34,7 @@ export default function Main() {
       </div>
 
       <div className="flex flex-col items-center max-h-screen">
-        <Label className="text-2xl font-special p-5">Experience</Label>
+        <Label className="text-2xl font-akira p-5">Experience</Label>
         <div className="flex justify-around w-11/12">
           <Card className="w-96">
             <CardHeader>
@@ -89,8 +90,79 @@ export default function Main() {
       <div className="p-5">
         <Separator />
       </div>
-      <div className="flex flex-col items-center max-h-screen">
-        <Label className="text-2xl font-special p-5">Selected Works</Label>
+      <div className="flex flex-col items-center max-w-screen">
+        <Label className="text-2xl font-akira p-5">Selected Works</Label>
+        <div className="flex grid gap-3 justify-center w-full">
+          <Card className="w-96">
+            <CardHeader className="font-special">
+              Icadio: An image Captioning application
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">Android Studio</Badge>
+                <Badge variant="outline">Kotlin</Badge>
+                <Badge variant="outline">TensorFlow</Badge>
+                <Badge variant="outline">Flask</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-96">
+            <CardHeader className="font-special">
+              Selyo Mobile: Tokenizing Social Interactions
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Hoppscotch</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-96">
+            <CardHeader className="font-special">
+              Doku. – Smart Contracts, No BLockchain needed.
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Express.JS</Badge>
+                <Badge variant="outline">MongoDB</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-96">
+            <CardHeader className="font-special">
+              NXT.GM: A place for everyone to share and join games
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Express.JS</Badge>
+                <Badge variant="outline">AWS S3</Badge>
+                <Badge variant="outline">MongoDB</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-96">
+            <CardHeader className="font-special">
+              PassForge: A Strong Password Generator
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">Android Studio</Badge>
+                <Badge variant="outline">Java</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+        </div>
       </div>
     </div>
   );
