@@ -12,7 +12,35 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiReact,
+  SiPython,
+  SiExpo,
+  SiCss3,
+  SiAndroidstudio,
+  SiFlask,
+  SiSolidity,
+  SiHoppscotch,
+  SiTailwindcss,
+  SiVite,
+  SiOpenai,
+  SiFigma,
+  SiExpress,
+} from "react-icons/si";
+
+import {
+  FaJava,
+  FaHtml5,
+  FaHardHat,
+  FaEthereum,
+  FaNodeJs,
+  FaAws,
+} from "react-icons/fa";
+
+import { DiMysql, DiMongodb } from "react-icons/di";
+import { RiNextjsFill } from "react-icons/ri";
 
 export default function Main() {
   const openUrl = (url: string) => {
@@ -33,12 +61,16 @@ export default function Main() {
   return (
     <div className="flex flex-col align-center justify-center overflow-x-hidden">
       <div className="flex flex-col items-center max-h-screen">
-        <Label className="text-4xl font-akira p-5 max-sm:text-[20px]">Greetings!</Label>
+        <Label className="text-4xl font-akira p-5 max-sm:text-[20px]">
+          Greetings!
+        </Label>
         <Avatar className="w-24 h-24 max-sm:w-16 max-sm:h-16">
           <AvatarImage src="https://avatars.githubusercontent.com/u/97579224?v=4" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <div className="font-bold text-xl max-sm:text-[18px]">My name is M-Jey L. Saturno</div>
+        <div className="font-bold text-xl max-sm:text-[18px]">
+          My name is M-Jey L. Saturno
+        </div>
         <div className="font-medium max-sm:text-[12px]">
           Software, Mobile Developer & Graphic Designer
         </div>
@@ -68,8 +100,8 @@ export default function Main() {
 
       <div className="flex flex-col items-center max-h-screen">
         <Label className="text-2xl font-akira p-5">Experience</Label>
-        <div className="grid grid-cols-3 gap-3">
-          <Card className="w-96">
+        <div className="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader>
               <CardTitle>Freelance Graphic Designer</CardTitle>
               <CardDescription>At FIVERR</CardDescription>
@@ -85,7 +117,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 ">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader>
               <CardTitle>Part-Time Layout & Graphic Designer</CardTitle>
               <CardDescription>At EZ Press</CardDescription>
@@ -102,7 +134,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96 ">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader>
               <CardTitle>Software Engineer Intern</CardTitle>
               <CardDescription>At The BLOKC</CardDescription>
@@ -123,10 +155,10 @@ export default function Main() {
       <div className="p-5">
         <Separator />
       </div>
-      <div className="flex flex-col items-center max-w-screen">
+      <div className="flex flex-col items-center max-w-screen mb-5 max-sm:mt-[100px]">
         <Label className="text-2xl font-akira p-5">Selected Works</Label>
         <div className="flex grid gap-3 justify-center">
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               Icadio: An image Captioning application
             </CardHeader>
@@ -146,7 +178,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               Selyo Mobile: Tokenizing Social Interactions
             </CardHeader>
@@ -164,7 +196,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               Doku. – Smart Contracts, No BLockchain needed.
             </CardHeader>
@@ -178,7 +210,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               NXT.GM: A place for everyone to share and join games
             </CardHeader>
@@ -195,7 +227,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">
               PassForge: A Strong Password Generator
             </CardHeader>
@@ -213,7 +245,7 @@ export default function Main() {
             </CardFooter>
           </Card>
 
-          <Card className="w-96">
+          <Card className="w-96 max-sm:w-80">
             <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
             <CardContent>
               <Avatar className="w-full h-full rounded-none">
@@ -227,6 +259,38 @@ export default function Main() {
               </div>
             </CardFooter>
           </Card>
+        </div>
+      </div>
+      <div className="p-5">
+        <Separator />
+      </div>
+      <div className="flex flex-col items-center max-w-screen mb-5">
+        <Label className="text-2xl font-akira p-5">My Stack</Label>
+        <div className="">
+          <SiJavascript size={60} title="JavaScript" color="white"/>
+          <SiTypescript size={60} title="TypeScript" color="white"/>
+          <FaNodeJs size={60} title="NodeJS" color="white"/>
+          <SiReact size={60} title="React.JS" color="white"/>
+          <SiVite size={60} title="Vite" color="white"/>
+          <RiNextjsFill size={60} title="Next.JS" color="white"/>
+          <SiPython size={60} title="Python" color="white"/>
+          <FaJava size={60} title="Java" color="white"/>
+          <FaHtml5 size={60} title="HTML5" color="white"/>
+          <SiCss3 size={60} title="CSS3" color="white"/>
+          <SiTailwindcss size={60} title="Tailwind CSS" color="white"/>
+          <SiExpo size={60} title="Expo" color="white"/>
+          <SiAndroidstudio size={60} title="Android Studio" color="white"/>
+          <SiFlask size={60} title="Flask" color="white"/>
+          <SiExpress size={60} title="Express" color="white"/>
+          <DiMysql size={60} title="MySQL" color="white"/>
+          <DiMongodb size={60} title="MongoDB" color="white"/>
+          <SiSolidity size={60} title="Solidity" color="white"/>
+          <FaHardHat size={60} title="Hardhat" color="white"/>
+          <FaEthereum size={60} title="Ethereum" color="white"/>
+          <SiHoppscotch size={60} title="Hoppscotch" color="white"/>
+          <SiOpenai size={60} title="OpenAI" color="white"/>
+          <SiFigma size={60} title="Figma" color="white"/>
+          <FaAws size={60} title="AWS" color="white"/>
         </div>
       </div>
     </div>
