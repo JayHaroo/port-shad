@@ -250,7 +250,7 @@ export default function Main() {
           <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
             <CardContent>
-              <Avatar className="w-full h-full rounded-none">
+              <Avatar className="rounded-none aspect-[16/9] w-full h-full">
                 <AvatarImage src="https://saturno-mjey.vercel.app/assets/chapp-BS9CDXP5.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
