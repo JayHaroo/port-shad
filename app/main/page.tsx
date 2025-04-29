@@ -13,6 +13,16 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import {
   SiTypescript,
   SiJavascript,
   SiReact,
@@ -74,23 +84,46 @@ export default function Main() {
         <div className="font-medium max-sm:text-[12px]">
           Software, Mobile Developer & Graphic Designer
         </div>
-        <div className="flex align-center justify-center mt-5 justify-evenly w-3/12 max-sm:w-8/12">
-          <Button
-            variant="outline"
-            onClick={() => openUrl("https://github.com/JayHaroo")}
-          >
-            My Github
-          </Button>
-          <Button
-            variant="outline"
-            onClick={() =>
-              openUrl(
-                "https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link"
-              )
-            }
-          >
-            My Resume
-          </Button>
+        <div className="flex justify-around align-middle items-center w-4/12 max-sm:w-12/12 max-sm:flex-col">
+          <div className="flex align-center justify-center mt-5 justify-evenly w-3/12 max-sm:w-8/12">
+            <Button
+              variant="outline"
+              onClick={() => openUrl("https://github.com/JayHaroo")}
+            >
+              My Github
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() =>
+                openUrl(
+                  "https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link"
+                )
+              }
+            >
+              My Resume
+            </Button>
+          </div>
+          <Drawer>
+            <DrawerTrigger>
+              <Button variant="outline" className="mt-5">About Me</Button>
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle>About me:</DrawerTitle>
+                <DrawerDescription>
+                  My name is M-Jey L. Saturno, a 22-year-old software engineer/developer &
+                  graphic designer. I am a graduate of Bachelor of Science in Computer Science
+                  at University of Cabuyao. I am a software engineer with a passion for visuals and
+                  design. I have experience in web and mobile development, as well as graphic design.
+                </DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <DrawerClose>
+                  <Button variant="outline">close</Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
 
