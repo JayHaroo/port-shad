@@ -296,6 +296,8 @@ export default function Main() {
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">Next.JS</Badge>
+                <Badge variant="outline">Typescript</Badge>
+                <Badge variant="outline">Javascript</Badge>
               </div>
             </CardFooter>
           </Card>
