@@ -99,6 +99,7 @@ export default function Main() {
                   "https://drive.google.com/file/d/1JgkBabXewQAZXjPe7DZaGoLcdvAQuagL/view?usp=drive_link"
                 )
               }
+              className="ml-3"
             >
               My Resume
             </Button>
