@@ -240,6 +240,8 @@ export default function Main() {
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Typescript</Badge>
+                <Badge variant="outline">Javascript</Badge>
                 <Badge variant="outline">Express.JS</Badge>
                 <Badge variant="outline">MongoDB</Badge>
               </div>
@@ -256,6 +258,8 @@ export default function Main() {
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Typescript</Badge>
+                <Badge variant="outline">Javascript</Badge>
                 <Badge variant="outline">Express.JS</Badge>
                 <Badge variant="outline">AWS S3</Badge>
                 <Badge variant="outline">MongoDB</Badge>
