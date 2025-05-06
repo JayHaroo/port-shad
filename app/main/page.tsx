@@ -105,7 +105,7 @@ export default function Main() {
             </Button>
           </div>
           <Drawer>
-            <DrawerTrigger>
+            <DrawerTrigger suppressHydrationWarning>
               <Button variant="outline" className="mt-5">About Me</Button>
             </DrawerTrigger>
             <DrawerContent>
@@ -335,6 +335,10 @@ export default function Main() {
           <SiOpenai size={60} title="OpenAI" color="white" />
           <SiFigma size={60} title="Figma" color="white" />
           <FaAws size={60} title="AWS" color="white" />
+          <Avatar className="w-12 h-12">
+            <AvatarImage src="Aptos_mark_WHT.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
         </div>
       </div>
     </div>
