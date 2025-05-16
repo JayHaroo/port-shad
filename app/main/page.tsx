@@ -106,16 +106,20 @@ export default function Main() {
           </div>
           <Drawer>
             <DrawerTrigger suppressHydrationWarning>
-              <Button variant="outline" className="mt-5">About Me</Button>
+              <Button variant="outline" className="mt-5">
+                About Me
+              </Button>
             </DrawerTrigger>
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>About me:</DrawerTitle>
                 <DrawerDescription>
-                  My name is M-Jey L. Saturno, a 22-year-old software engineer/developer &
-                  graphic designer. I am a graduate of Bachelor of Science in Computer Science
-                  at University of Cabuyao. I am a software engineer with a passion for visuals and
-                  design. I have experience in web and mobile development, as well as graphic design.
+                  My name is M-Jey L. Saturno, a 22-year-old software
+                  engineer/developer & graphic designer. I am a graduate of
+                  Bachelor of Science in Computer Science at University of
+                  Cabuyao. I am a software engineer with a passion for visuals
+                  and design. I have experience in web and mobile development,
+                  as well as graphic design.
                 </DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
@@ -244,6 +248,19 @@ export default function Main() {
                 <Badge variant="outline">Javascript</Badge>
                 <Badge variant="outline">Express.JS</Badge>
                 <Badge variant="outline">MongoDB</Badge>
+              </div>
+            </CardFooter>
+          </Card>
+
+          <Card className="w-full mb-3 break-inside-avoid">
+            <CardHeader className="font-special">
+              XBracket - Create quick Beyblade X tournament brackets
+            </CardHeader>
+            <CardContent></CardContent>
+            <CardFooter className="flex justify-between">
+              <div className="">
+                <Badge variant="outline">React Native</Badge>
+                <Badge variant="outline">Typescript</Badge>
               </div>
             </CardFooter>
           </Card>
