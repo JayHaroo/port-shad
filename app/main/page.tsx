@@ -357,7 +357,7 @@ export default function Main() {
           <SiOpenai size={60} title="OpenAI" color="white" />
           <SiFigma size={60} title="Figma" color="white" />
           <FaAws size={60} title="AWS" color="white" />
-          <Avatar className="w-12 h-12">
+          <Avatar className="w-12 h-12" title="Aptos">
             <AvatarImage src="Aptos_mark_WHT.png" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
