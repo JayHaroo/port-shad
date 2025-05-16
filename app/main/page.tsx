@@ -256,7 +256,12 @@ export default function Main() {
             <CardHeader className="font-special">
               XBracket - Create quick Beyblade X tournament brackets
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Avatar className="rounded-none aspect-[16/9] w-full h-full">
+                <AvatarImage src="xb-banner.png"/>
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
