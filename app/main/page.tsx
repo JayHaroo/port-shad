@@ -38,6 +38,7 @@ import {
   SiOpenai,
   SiFigma,
   SiExpress,
+  SiGithub,
 } from "react-icons/si";
 
 import {
@@ -210,11 +211,14 @@ export default function Main() {
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </CardContent>
-            <CardFooter className="flex flex-wrap gap-1">
-              <Badge variant="outline">Android Studio</Badge>
-              <Badge variant="outline">Kotlin</Badge>
-              <Badge variant="outline">TensorFlow</Badge>
-              <Badge variant="outline">Flask</Badge>
+            <CardFooter className="flex flex-wrap gap-2">
+              <div className="ml-3">
+                <Badge variant="outline">Android Studio</Badge>
+                <Badge variant="outline">Kotlin</Badge>
+                <Badge variant="outline">TensorFlow</Badge>
+                <Badge variant="outline">Flask</Badge>
+              </div>
+              <Button onClick={() => openUrl("https://github.com/JayHaroo/Icadio-APKs/releases")}><SiGithub/> Get</Button>
             </CardFooter>
           </Card>
 
@@ -258,15 +262,16 @@ export default function Main() {
             </CardHeader>
             <CardContent>
               <Avatar className="rounded-none aspect-[16/9] w-full h-full">
-                <AvatarImage src="xb-banner.png"/>
+                <AvatarImage src="xb-banner.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div className="">
+              <div className="ml-3">
                 <Badge variant="outline">React Native</Badge>
                 <Badge variant="outline">Typescript</Badge>
               </div>
+              <Button onClick={() => openUrl("https://github.com/JayHaroo/x-bracket/releases")}><SiGithub/> Get</Button>
             </CardFooter>
           </Card>
 
