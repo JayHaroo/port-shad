@@ -283,7 +283,7 @@ export default function Main() {
               <VideoPlayer uri="https://nxtgm.s3.ap-southeast-2.amazonaws.com/uploads/untitled.webm" />
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div className="">
+              <div className="ml-3">
                 <Badge variant="outline">React Native</Badge>
                 <Badge variant="outline">Typescript</Badge>
                 <Badge variant="outline">Javascript</Badge>
@@ -291,6 +291,7 @@ export default function Main() {
                 <Badge variant="outline">AWS S3</Badge>
                 <Badge variant="outline">MongoDB</Badge>
               </div>
+              <Button onClick={() => openUrl("https://github.com/JayHaroo/nxt-gm-rebuild")}><SiGithub /> View</Button>
             </CardFooter>
           </Card>
 
@@ -326,6 +327,7 @@ export default function Main() {
                 <Badge variant="outline">Typescript</Badge>
                 <Badge variant="outline">Javascript</Badge>
               </div>
+              <Button onClick={() => openUrl("https://chapp-chat.vercel.app/")}>View</Button>
             </CardFooter>
           </Card>
         </div>
