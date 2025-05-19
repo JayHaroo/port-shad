@@ -266,15 +266,26 @@ export default function Main() {
                       <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
                   </CarouselItem>
-                                    <CarouselItem>
+                  <CarouselItem>
                     <Avatar className="rounded-none aspect-[16/9] w-full h-full">
                       <AvatarImage src="/doku/2.jpg" />
                       <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
                   </CarouselItem>
-                  
-
+                  <CarouselItem>
+                    <Avatar className="rounded-none aspect-[16/9] w-full h-full">
+                      <AvatarImage src="/doku/3.jpg" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <Avatar className="rounded-none aspect-[16/9] w-full h-full">
+                      <AvatarImage src="/doku/4.jpg" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </CarouselItem>
                 </CarouselContent>
+
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
