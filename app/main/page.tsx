@@ -242,7 +242,7 @@ export default function Main() {
 
           <Card className="w-full mb-3 break-inside-avoid">
             <CardHeader className="font-special">
-              Doku. – Smart Contracts, No BLockchain needed.
+              Doku. – Agreements on and off chain.
             </CardHeader>
             <CardContent></CardContent>
             <CardFooter className="flex justify-between">
@@ -317,7 +317,7 @@ export default function Main() {
             <CardHeader className="font-special">Chapp! - Chat dApp</CardHeader>
             <CardContent>
               <Avatar className="rounded-none aspect-[16/9] w-full h-full">
-                <AvatarImage src="https://saturno-mjey.vercel.app/assets/chapp-BS9CDXP5.png" />
+                <AvatarImage src="https://saturno-mje y.vercel.app/assets/chapp-BS9CDXP5.png" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
             </CardContent>
