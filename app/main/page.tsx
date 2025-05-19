@@ -23,6 +23,13 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import {
   SiTypescript,
   SiJavascript,
   SiReact,
@@ -218,7 +225,13 @@ export default function Main() {
                 <Badge variant="outline">TensorFlow</Badge>
                 <Badge variant="outline">Flask</Badge>
               </div>
-              <Button onClick={() => openUrl("https://github.com/JayHaroo/Icadio-APKs/releases")}><SiGithub/> Get</Button>
+              <Button
+                onClick={() =>
+                  openUrl("https://github.com/JayHaroo/Icadio-APKs/releases")
+                }
+              >
+                <SiGithub /> Get
+              </Button>
             </CardFooter>
           </Card>
 
@@ -244,7 +257,28 @@ export default function Main() {
             <CardHeader className="font-special">
               Doku. – Agreements on and off chain.
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <Carousel>
+                <CarouselContent>
+                  <CarouselItem>
+                    <Avatar className="rounded-none aspect-[16/9] w-full h-full">
+                      <AvatarImage src="/doku/1.jpg" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </CarouselItem>
+                                    <CarouselItem>
+                    <Avatar className="rounded-none aspect-[16/9] w-full h-full">
+                      <AvatarImage src="/doku/2.jpg" />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </CarouselItem>
+                  
+
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </CardContent>
             <CardFooter className="flex justify-between">
               <div className="">
                 <Badge variant="outline">React Native</Badge>
@@ -271,7 +305,13 @@ export default function Main() {
                 <Badge variant="outline">React Native</Badge>
                 <Badge variant="outline">Typescript</Badge>
               </div>
-              <Button onClick={() => openUrl("https://github.com/JayHaroo/x-bracket/releases")}><SiGithub/> Get</Button>
+              <Button
+                onClick={() =>
+                  openUrl("https://github.com/JayHaroo/x-bracket/releases")
+                }
+              >
+                <SiGithub /> Get
+              </Button>
             </CardFooter>
           </Card>
 
@@ -291,7 +331,13 @@ export default function Main() {
                 <Badge variant="outline">AWS S3</Badge>
                 <Badge variant="outline">MongoDB</Badge>
               </div>
-              <Button onClick={() => openUrl("https://github.com/JayHaroo/nxt-gm-rebuild")}><SiGithub /> View</Button>
+              <Button
+                onClick={() =>
+                  openUrl("https://github.com/JayHaroo/nxt-gm-rebuild")
+                }
+              >
+                <SiGithub /> View
+              </Button>
             </CardFooter>
           </Card>
 
@@ -327,7 +373,9 @@ export default function Main() {
                 <Badge variant="outline">Typescript</Badge>
                 <Badge variant="outline">Javascript</Badge>
               </div>
-              <Button onClick={() => openUrl("https://chapp-chat.vercel.app/")}>View</Button>
+              <Button onClick={() => openUrl("https://chapp-chat.vercel.app/")}>
+                View
+              </Button>
             </CardFooter>
           </Card>
         </div>
