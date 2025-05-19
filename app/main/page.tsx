@@ -285,9 +285,6 @@ export default function Main() {
                     </Avatar>
                   </CarouselItem>
                 </CarouselContent>
-
-                <CarouselPrevious />
-                <CarouselNext />
               </Carousel>
             </CardContent>
             <CardFooter className="flex justify-between">
