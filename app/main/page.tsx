@@ -53,9 +53,10 @@ import {
   FaEthereum,
   FaNodeJs,
   FaAws,
+  FaPhp
 } from "react-icons/fa";
 
-import { DiMysql, DiMongodb } from "react-icons/di";
+import { DiMysql, DiMongodb, DiPostgresql } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
 
 export default function Main() {
@@ -403,6 +404,7 @@ export default function Main() {
           <SiPython size={60} title="Python" color="white" />
           <FaJava size={60} title="Java" color="white" />
           <FaHtml5 size={60} title="HTML5" color="white" />
+          <FaPhp size={60} title="PHP" color="white" />
           <SiCss3 size={60} title="CSS3" color="white" />
           <SiTailwindcss size={60} title="Tailwind CSS" color="white" />
           <SiExpo size={60} title="Expo" color="white" />
@@ -411,6 +413,7 @@ export default function Main() {
           <SiExpress size={60} title="Express" color="white" />
           <DiMysql size={60} title="MySQL" color="white" />
           <DiMongodb size={60} title="MongoDB" color="white" />
+          <DiPostgresql size={60} title="PostgreSQL" color="white" />
           <SiSolidity size={60} title="Solidity" color="white" />
           <FaHardHat size={60} title="Hardhat" color="white" />
           <FaEthereum size={60} title="Ethereum" color="white" />
