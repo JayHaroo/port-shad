@@ -26,16 +26,34 @@ export default function creativesPages() {
         <Card className="w-full mb-3 break-inside-avoid">
           <CardContent>
             <Avatar className="w-full h-full rounded-none">
-              <AvatarImage src="https://saturno-mjey.vercel.app/assets/icadio-D_oPlUfF.jpg" />
+              <AvatarImage
+                src="https://lh3.googleusercontent.com/d/1z9utf5s-FVQUYSL2Nw22K7NzOFMtDuFC"
+                className="object-contain"
+              />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </CardContent>
           <CardFooter className="flex flex-wrap gap-2">
             <div className="ml-3">
-              <Badge variant="outline">Android Studio</Badge>
-              <Badge variant="outline">Kotlin</Badge>
-              <Badge variant="outline">TensorFlow</Badge>
-              <Badge variant="outline">Flask</Badge>
+              <Badge variant="outline">Photoshop</Badge>
+            </div>
+          </CardFooter>
+        </Card>
+
+        {/* Each card */}
+        <Card className="w-full mb-3 break-inside-avoid">
+          <CardContent>
+            <Avatar className="w-full h-full rounded-none">
+              <AvatarImage
+                src="https://lh3.googleusercontent.com/d/1m7e52wdhpvtRgP1tKKotj5NeMze7Z0qp"
+                className="object-contain"
+              />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+          </CardContent>
+          <CardFooter className="flex flex-wrap gap-2">
+            <div className="ml-3">
+              <Badge variant="outline">Photoshop</Badge>
             </div>
           </CardFooter>
         </Card>
