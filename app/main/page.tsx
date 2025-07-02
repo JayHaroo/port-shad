@@ -48,7 +48,7 @@ import {
 
 import { DiMysql, DiMongodb, DiPostgresql } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 export default function Main() {
   const openUrl = (url: string) => {
@@ -103,7 +103,7 @@ export default function Main() {
             </Button>
 
             <Button variant="outline" className="ml-3">
-              Graphic Design Portfolio
+              <Link href="/main/creatives">Graphic Design Portfolio</Link>
             </Button>
           </div>
         </div>
