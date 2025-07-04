@@ -1,19 +1,18 @@
 "use client";
+
+import { useEffect } from "react";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import {
   Card,
   CardContent,
-  CardFooter,
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useEffect } from "react";
 import links from "./links.json";
 
-
-export default function creativesPages() {
-
+export default function CreativesPage() {
   const data = links as string[];
+
   useEffect(() => {
     if (data.length === 0) {
       console.error("No links found in the data array.");
@@ -21,27 +20,31 @@ export default function creativesPages() {
   }, [data]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <Label className="text-4xl font-akira p-5 max-sm:text-[20px]">
-        My graphic design works
+    <div className="flex flex-col items-center justify-center min-h-screen">
+      <Label className="text-4xl font-akira p-5 max-sm:text-[20px] text-center">
+        My Graphic Design Works
       </Label>
       <Separator className="w-1/2 mb-5" />
 
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 p-5">
+      {/* Pinterest-like grid layout */}
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 p-5 w-full max-w-7xl">
         {data.map((link, index) => (
           <Card key={index} className="w-full mb-3 break-inside-avoid">
-            <CardContent className="">
+            <CardContent>
               <Avatar className="w-full h-full rounded-none">
-                <AvatarImage src={link} alt={`Creative ${index + 1}`} className="object-contain"/>
-                <AvatarFallback>CD</AvatarFallback>
+                <AvatarImage
+                  src={link}
+                  alt={`Creative ${index + 1}`}
+                  className="object-contain"
+                />
+                <AvatarFallback>
+                  {`C${index + 1}`}
+                </AvatarFallback>
               </Avatar>
             </CardContent>
-            <CardFooter className="justify-center">
-            </CardFooter>
           </Card>
         ))}
-        </div>
-
+      </div>
     </div>
   );
 }
