@@ -27,12 +27,12 @@ export default function creativesPages() {
       </Label>
       <Separator className="w-1/2 mb-5" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-screen-lg p-5">
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 p-5">
         {data.map((link, index) => (
           <Card key={index} className="w-full mb-3 break-inside-avoid">
             <CardContent className="">
               <Avatar className="w-full h-full rounded-none">
-                <AvatarImage src={link} alt={`Creative ${index + 1}`} />
+                <AvatarImage src={link} alt={`Creative ${index + 1}`} className="object-contain"/>
                 <AvatarFallback>CD</AvatarFallback>
               </Avatar>
             </CardContent>
