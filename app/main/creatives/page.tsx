@@ -29,9 +29,9 @@ export default function creativesPages() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-screen-lg p-5">
         {data.map((link, index) => (
-          <Card key={index} className="shadow-lg">
-            <CardContent className="flex flex-col items-center">
-              <Avatar className="w-full h-full mb-4 rounded-none object-contain">
+          <Card key={index} className="w-full mb-3 break-inside-avoid">
+            <CardContent className="">
+              <Avatar className="w-full h-full rounded-none">
                 <AvatarImage src={link} alt={`Creative ${index + 1}`} />
                 <AvatarFallback>CD</AvatarFallback>
               </Avatar>
