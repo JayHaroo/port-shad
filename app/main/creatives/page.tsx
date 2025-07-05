@@ -20,12 +20,12 @@ export default function CreativesPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="">
+      <div className="flex items-center">
         <Label className="text-4xl font-akira p-5 max-sm:text-[20px] text-center">
           My Graphic Design Works
         </Label>
-        <Button asChild className="absolute top-5 left-5 z-10">
-          <link href="/">Back to Home</link>
+        <Button className="">
+          Back to Home
         </Button>
       </div>
 
