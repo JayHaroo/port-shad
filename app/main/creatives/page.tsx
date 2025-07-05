@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import links from "./links.json";
-import link from "next/link";
+import Link from "next/link";
 
 export default function CreativesPage() {
   const data = links as string[];
@@ -24,9 +24,11 @@ export default function CreativesPage() {
         <Label className="text-4xl font-akira p-5 max-sm:text-[20px] text-center">
           My Graphic Design Works
         </Label>
-        <Button className="">
-          Back to Home
-        </Button>
+        <Link href="/main" >
+          <Button className="bg-transparent border border-white text-white">
+            Home
+          </Button>
+        </Link>
       </div>
 
       <Separator className="w-1/2 mb-5" />
