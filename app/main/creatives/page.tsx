@@ -3,12 +3,11 @@
 import { useEffect } from "react";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import links from "./links.json";
+import link from "next/link";
 
 export default function CreativesPage() {
   const data = links as string[];
@@ -21,9 +20,15 @@ export default function CreativesPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <Label className="text-4xl font-akira p-5 max-sm:text-[20px] text-center">
-        My Graphic Design Works
-      </Label>
+      <div className="">
+        <Label className="text-4xl font-akira p-5 max-sm:text-[20px] text-center">
+          My Graphic Design Works
+        </Label>
+        <Button asChild className="absolute top-5 left-5 z-10">
+          <link href="/">Back to Home</link>
+        </Button>
+      </div>
+
       <Separator className="w-1/2 mb-5" />
 
       {/* Pinterest-like grid layout */}
@@ -37,9 +42,7 @@ export default function CreativesPage() {
                   alt={`Creative ${index + 1}`}
                   className="object-contain"
                 />
-                <AvatarFallback>
-                  {`C${index + 1}`}
-                </AvatarFallback>
+                <AvatarFallback>{`C${index + 1}`}</AvatarFallback>
               </Avatar>
             </CardContent>
           </Card>
