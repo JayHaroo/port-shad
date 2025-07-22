@@ -134,7 +134,7 @@ export default function Main() {
 
           <Card className="w-96 max-sm:w-80">
             <CardHeader>
-              <CardTitle>Part-Time Layout & Graphic Designer</CardTitle>
+              <CardTitle>Head Layout & Graphic Designer, EZ Press</CardTitle>
               <CardDescription>At EZ Press</CardDescription>
             </CardHeader>
             <CardContent>
@@ -144,14 +144,14 @@ export default function Main() {
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div>2022-2023</div>
+              <div>August 2022 – September 2023</div>
               <div>On Site</div>
             </CardFooter>
           </Card>
 
           <Card className="w-96 max-sm:w-80">
             <CardHeader>
-              <CardTitle>Software Engineer Intern</CardTitle>
+              <CardTitle>Software Engineer / Lead Mobile Developer</CardTitle>
               <CardDescription>At The BLOKC</CardDescription>
             </CardHeader>
             <CardContent>
@@ -161,7 +161,7 @@ export default function Main() {
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div>Jan - Mar 2025</div>
+              <div>January - March 2025</div>
               <div>Remote</div>
             </CardFooter>
           </Card>
