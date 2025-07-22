@@ -94,7 +94,7 @@ export default function Main() {
               variant="outline"
               onClick={() =>
                 openUrl(
-                  "https://drive.google.com/file/d/1VZdSRkZpp0JcU0bHxVtRGXT8r-9gJVjC/view?usp=sharing"
+                  "https://drive.google.com/file/d/1Ur8sr8wtyEeO8Xx1Pl9szBW2_a-JpL1l/view?usp=sharing"
                 )
               }
               className="ml-3"
