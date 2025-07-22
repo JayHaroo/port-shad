@@ -118,7 +118,7 @@ export default function Main() {
         <div className="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
           <Card className="w-96 max-sm:w-80">
             <CardHeader>
-              <CardTitle>Freelance Graphic Designer</CardTitle>
+              <CardTitle>Graphic Designer</CardTitle>
               <CardDescription>At FIVERR</CardDescription>
             </CardHeader>
             <CardContent>
@@ -127,7 +127,7 @@ export default function Main() {
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <div>2021-2022</div>
+              <div>July 2021 - August 2022</div>
               <div>Remote</div>
             </CardFooter>
           </Card>
