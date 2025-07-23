@@ -44,6 +44,7 @@ import {
   FaNodeJs,
   FaAws,
   FaPhp,
+  FaLaravel,
 } from "react-icons/fa";
 
 import { DiMysql, DiMongodb, DiPostgresql } from "react-icons/di";
