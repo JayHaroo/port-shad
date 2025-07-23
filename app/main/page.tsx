@@ -376,6 +376,7 @@ export default function Main() {
           <FaJava size={60} title="Java" color="white" />
           <FaHtml5 size={60} title="HTML5" color="white" />
           <FaPhp size={60} title="PHP" color="white" />
+          <FaLaravel size={60} title="Laravel" color="white" />
           <SiCss3 size={60} title="CSS3" color="white" />
           <SiTailwindcss size={60} title="Tailwind CSS" color="white" />
           <SiExpo size={60} title="Expo" color="white" />
